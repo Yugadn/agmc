@@ -1,0 +1,342 @@
+{
+	"info": {
+		"_postman_id": "c223fd0b-7724-4697-b9e1-8f2b2ae772df",
+		"name": "alterra-agmc-day1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book",
+					"protocol": "https",
+					"host": [
+						"virtserver",
+						"swaggerhub",
+						"com"
+					],
+					"path": [
+						"sepulsa",
+						"RentABook-API",
+						"1.0.0",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/book/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/2323",
+					"protocol": "https",
+					"host": [
+						"virtserver",
+						"swaggerhub",
+						"com"
+					],
+					"path": [
+						"sepulsa",
+						"RentABook-API",
+						"1.0.0",
+						"book",
+						"2323"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book",
+					"protocol": "https",
+					"host": [
+						"virtserver",
+						"swaggerhub",
+						"com"
+					],
+					"path": [
+						"sepulsa",
+						"RentABook-API",
+						"1.0.0",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/book/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/2",
+					"protocol": "https",
+					"host": [
+						"virtserver",
+						"swaggerhub",
+						"com"
+					],
+					"path": [
+						"sepulsa",
+						"RentABook-API",
+						"1.0.0",
+						"book",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/book/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/1",
+					"protocol": "https",
+					"host": [
+						"virtserver",
+						"swaggerhub",
+						"com"
+					],
+					"path": [
+						"sepulsa",
+						"RentABook-API",
+						"1.0.0",
+						"book",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BTCUSDT 1min interval",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-MBX-APIKEY",
+						"value": "{{api_key}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://testnet.binance.vision/api/v1/klines?symbol=BTCUSDT&interval=1m",
+					"protocol": "https",
+					"host": [
+						"testnet",
+						"binance",
+						"vision"
+					],
+					"path": [
+						"api",
+						"v1",
+						"klines"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTCUSDT"
+						},
+						{
+							"key": "interval",
+							"value": "1m"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BTCUSDT 1d interval",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-MBX-APIKEY",
+						"value": "{{api_key}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://testnet.binance.vision/api/v1/klines?symbol=BTCUSDT&interval=1d&startTime=1661990400000&endTime=1662595199000",
+					"protocol": "https",
+					"host": [
+						"testnet",
+						"binance",
+						"vision"
+					],
+					"path": [
+						"api",
+						"v1",
+						"klines"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTCUSDT"
+						},
+						{
+							"key": "interval",
+							"value": "1d"
+						},
+						{
+							"key": "startTime",
+							"value": "1661990400000"
+						},
+						{
+							"key": "endTime",
+							"value": "1662595199000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "account information",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-MBX-APIKEY",
+						"value": "{{api_key}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://testnet.binance.vision/api/v3/account?signature={{signature}}&timestamp={{timestamp}}",
+					"protocol": "https",
+					"host": [
+						"testnet",
+						"binance",
+						"vision"
+					],
+					"path": [
+						"api",
+						"v3",
+						"account"
+					],
+					"query": [
+						{
+							"key": "signature",
+							"value": "{{signature}}"
+						},
+						{
+							"key": "timestamp",
+							"value": "{{timestamp}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"const ts  = Date.now();",
+					"pm.environment.set(\"timestamp\", ts);",
+					"",
+					"let paramsObject = {};",
+					"",
+					"const binance_api_secret = pm.environment.get(\"api_secret\");",
+					"",
+					"const parameters = pm.request.url.query;",
+					"",
+					"parameters.map((param) => {",
+					"    if (param.key != 'signature' && ",
+					"        param.key != 'timestamp' && ",
+					"        !is_empty(param.value) &&",
+					"        !is_disabled(param.disabled)) {",
+					"            paramsObject[param.key] = param.value;",
+					"            //console.log(encodeURIComponent(param.value));",
+					"            //pm.environment.set(param.key, encodeURIComponent(param.value));",
+					"    }",
+					"})",
+					"        ",
+					"Object.assign(paramsObject, {'timestamp': ts});",
+					"",
+					"if (binance_api_secret) {",
+					"    const queryString = Object.keys(paramsObject).map((key) => {",
+					"        return `${key}=${paramsObject[key]}`;",
+					"    }).join('&');",
+					"    console.log(queryString);",
+					"    const signature = CryptoJS.HmacSHA256(queryString, binance_api_secret).toString();",
+					"    pm.environment.set(\"signature\", signature);",
+					"}",
+					"",
+					"",
+					"function is_disabled(str) {",
+					"    return str == true;",
+					"}",
+					"",
+					"function is_empty(str) {",
+					"    if (typeof str == 'undefined' ||",
+					"        !str || ",
+					"        str.length === 0 || ",
+					"        str === \"\" ||",
+					"        !/[^\\s]/.test(str) ||",
+					"        /^\\s*$/.test(str) ||",
+					"        str.replace(/\\s/g,\"\") === \"\")",
+					"    {",
+					"        return true;",
+					"    }",
+					"    else",
+					"    {",
+					"        return false;",
+					"    }",
+					"}"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
